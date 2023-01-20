@@ -58,11 +58,11 @@ public class TestIntegrazione extends ApplicationTest {
     InputStream is = Main.class.getResourceAsStream("/first");
     assert is != null;
     Scanner s = new Scanner(is);
-    Presenter firstPresenter = new SkierPresenter(model, nextSkier, firstRun, FirstStrategy.INSTANCE);
+    SkierPresenter firstPresenter = new SkierPresenter(model, firstRun, FirstStrategy.INSTANCE);
     model.readFilePrimaManche(s);
-
-    Presenter secondPresenter = new SkierPresenter(model,nextSkier,secondRun, SecondStrategy.INSTANCE);
-    Presenter finalPresenter = new SkierPresenter(model,nextSkier,totalRun,ThirdStrategy.INSTANCE);
+    Presenter nextSkierPresenter = new NextSkierPresenter(model,nextSkier,firstRun);
+    SkierPresenter secondPresenter = new SkierPresenter(model,secondRun, SecondStrategy.INSTANCE);
+    SkierPresenter finalPresenter = new SkierPresenter(model,totalRun, FinalStrategy.INSTANCE);
 
     Scene scene = new Scene(gridPane);
     primaryStage.setScene(scene);

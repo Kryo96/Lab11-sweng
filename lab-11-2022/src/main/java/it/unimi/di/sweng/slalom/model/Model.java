@@ -32,7 +32,9 @@ public class Model implements Observable<Map<String,List<Double>>> {
 
   @Override
   public void notifyObservers() {
-    for(int i=0;i<observers.size();i++) observers.get(i).update(this, getState());
+    for(int i=0; i<observers.size(); i++)
+      observers.get(i).update(this, getState());
+
   }
 
   @Override
@@ -52,4 +54,5 @@ public class Model implements Observable<Map<String,List<Double>>> {
       values.put(stringListEntry.getKey(),new ArrayList<>(stringListEntry.getValue()));
     return values;
   }
+
 }

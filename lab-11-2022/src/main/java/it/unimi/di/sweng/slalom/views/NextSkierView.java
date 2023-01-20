@@ -51,4 +51,5 @@ public class NextSkierView extends Region {
     return name.getText();
   }
 
+
 }

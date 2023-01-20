@@ -4,6 +4,7 @@ import it.unimi.di.sweng.slalom.Main;
 import it.unimi.di.sweng.slalom.Observer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
 
 import java.io.InputStream;
 import java.util.List;
@@ -40,4 +41,14 @@ class ModelTest {
         SUT.readFilePrimaManche(s);
         verify(obs).update(SUT, SUT.getState());
     }
+    @Test
+    void readRecordTest(){
+        Observer<Map<String,List<Double>>> obs = mock(Observer.class);
+        SUT.addObserver(obs);
+        SUT.readFilePrimaManche(s);
+        SUT.readRecord("BRIGNONE Federica","12.5");
+        assertThat(SUT.getState().get("BRIGNONE Federica")).contains(12.5);
+        verify(obs).update(SUT,SUT.getState());
+    }
+
 }
