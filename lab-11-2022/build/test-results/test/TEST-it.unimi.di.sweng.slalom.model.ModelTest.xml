@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.di.sweng.slalom.model.ModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-15T11:09:40" hostname="dani-mac" time="0.457">
+  <properties/>
+  <testcase name="notifyObservers()" classname="it.unimi.di.sweng.slalom.model.ModelTest" time="0.391"/>
+  <testcase name="readFilePrimaManche()" classname="it.unimi.di.sweng.slalom.model.ModelTest" time="0.066"/>
+  <system-out><![CDATA[time: [57,9800] name: [BRIGNONE Federica]
+time: [59,2400] name: [GASIENICA-DANIEL Maryna]
+time: [59,1900] name: [GISIN Michelle]
+time: [59,0700] name: [GUT-BEHRAMI Lara]
+time: [57,5600] name: [HECTOR Sara]
+time: [59,2100] name: [HOLDENER Wendy]
+time: [58,4800] name: [HROVAT Meta]
+time: [59,3400] name: [LIENSBERGER Katharina]
+time: [58,5800] name: [MOWINCKEL Ragnhild]
+time: [58,8100] name: [O BRIEN Nina]
+time: [59,2900] name: [RAST Camille]
+time: [59,3900] name: [STJERNESUND Thea Louise]
+time: [57,8600] name: [TRUPPE Katharina]
+time: [59,3400] name: [VLHOVA Petra]
+time: [58,9300] name: [WORLEY Tessa]
+time: [57,9800] name: [BRIGNONE Federica]
+time: [59,2400] name: [GASIENICA-DANIEL Maryna]
+time: [59,1900] name: [GISIN Michelle]
+time: [59,0700] name: [GUT-BEHRAMI Lara]
+time: [57,5600] name: [HECTOR Sara]
+time: [59,2100] name: [HOLDENER Wendy]
+time: [58,4800] name: [HROVAT Meta]
+time: [59,3400] name: [LIENSBERGER Katharina]
+time: [58,5800] name: [MOWINCKEL Ragnhild]
+time: [58,8100] name: [O BRIEN Nina]
+time: [59,2900] name: [RAST Camille]
+time: [59,3900] name: [STJERNESUND Thea Louise]
+time: [57,8600] name: [TRUPPE Katharina]
+time: [59,3400] name: [VLHOVA Petra]
+time: [58,9300] name: [WORLEY Tessa]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
